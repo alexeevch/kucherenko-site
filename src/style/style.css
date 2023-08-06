@@ -1,3 +1,12 @@
+:root {
+    --size-index: calc(1vw + 1vh);
+    --color-bg-primary: #FBFBFB;
+    --color-text-primary: #445964;
+    --color-text-secondary: #263138;
+}
+
 body {
     font-family: Roboto, sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
 }
