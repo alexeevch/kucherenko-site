@@ -1,8 +1,10 @@
 <template>
   <section id="home">
-    <div class="header-wrapper">
-      <HeaderLayout />
-    </div>
+    <transition appear @before-enter="beforeEnter" @enter="enter">
+      <div class="header-wrapper">
+        <HeaderLayout />
+      </div>
+    </transition>
     <div class="home__content-wrapper">
       <h4 class="home__greeting">Hello, World! I'm</h4>
       <h1 class="home__specialization">
@@ -16,6 +18,20 @@
 
 <script setup lang="ts">
 import HeaderLayout from "@/components/layouts/HeaderLayout.vue";
+import gsap from "gsap";
+
+const beforeEnter = (el: { style: { opacity: string; transform: string } }) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(-100px)";
+};
+
+const enter = (el: gsap.TweenTarget) => {
+  gsap.to(el, {
+    duration: 1,
+    y: 0,
+    opacity: 1,
+  });
+};
 </script>
 
 <style scoped>
