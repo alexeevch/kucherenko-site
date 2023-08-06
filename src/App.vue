@@ -1,9 +1,6 @@
 <template>
   <HomeView />
   <MainLayout>
-    <AboutView />
-    <SkillsView />
-    <ContactsView />
     <router-view />
   </MainLayout>
 </template>
