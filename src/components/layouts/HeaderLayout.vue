@@ -40,11 +40,11 @@
 }
 
 .logo__img {
-  height: calc(var(--size-index) * 2);
+  height: calc(var(--size-index) * 1.4);
 }
 
 .logo__text {
-  font-size: calc(var(--size-index) * 1.3);
+  font-size: calc(var(--size-index) * 1);
 }
 
 .nav {
