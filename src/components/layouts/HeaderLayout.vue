@@ -9,9 +9,6 @@
 
     <nav class="header__nav nav">
       <div class="nav__item">
-        <router-link to="/home">home</router-link>
-      </div>
-      <div class="nav__item">
         <router-link to="/about">about</router-link>
       </div>
       <div class="nav__item">
