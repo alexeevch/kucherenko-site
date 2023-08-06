@@ -1,9 +1,9 @@
-<template>home-vue</template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "HomeView",
-});
+<script setup lang="ts">
+import HeaderLayout from "@/components/layouts/HeaderLayout.vue";
 </script>
+
+<template>
+  <HeaderLayout />
+</template>
+
+<style scoped></style>
