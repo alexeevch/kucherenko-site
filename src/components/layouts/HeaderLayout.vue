@@ -27,7 +27,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 2rem;
+  padding: calc(var(--size-index) * 1.4) calc(var(--size-index) * 2);
 }
 
 .header__logo {
@@ -48,5 +48,6 @@
   display: flex;
   gap: calc(var(--size-index) * 2.2);
   font-weight: 500;
+  font-size: calc(var(--size-index) * 0.6);
 }
 </style>
